@@ -1,0 +1,138 @@
+body {
+  font-family: "Source Serif Pro", serif;
+}
+.portfolio {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.navbar {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  height: 10vh;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+}
+.navbar li {
+  list-style: none;
+}
+.navbar li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: azure;
+}
+.top-left,
+.top-right {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.top-left {
+  /* background: #e0bd73; */
+  background: rgb(134, 186, 199);
+  width: 70%;
+  padding-left: 5%;
+}
+.top-right {
+  background: linear-gradient(-45deg, #00bcd4, #004d40 70%);
+  width: 30%;
+}
+
+/* --icons & Hover-- */
+.icons {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.icons .fa-brands {
+  color: ghostwhite;
+}
+.icons .fa-regular {
+  color: ghostwhite;
+}
+.icons .fa-brands:hover {
+  background: transparent;
+  color: rgb(51, 121, 250);
+}
+.fa-regular:hover {
+  background: transparent;
+  color: rgb(51, 121, 250);
+}
+/* --Text Area-- */
+.text {
+  margin-left: 5rem;
+}
+.text h2 {
+  font-size: 2rem;
+  color: cornsilk;
+}
+.text h2 span {
+  color: #0c8b8f;
+}
+.text h1 {
+  font-size: 3rem;
+  color: cornsilk;
+}
+.details-text {
+  font-size: 1.1rem;
+  max-width: 38rem;
+  color: rgb(235, 233, 217);
+  margin: 1.5rem 0 1.5rem 0;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+/* --Button Area-- */
+.btn button {
+  font-size: 1.1rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+#btnone {
+  background-color: rgba(255, 248, 220, 0.828);
+  color: black;
+}
+#btnone:hover {
+  background-color: transparent;
+  color: aqua;
+}
+#btntwo {
+  background: transparent;
+  color: aqua;
+  margin-left: 2rem;
+}
+#btntwo:hover {
+  background: #0c8b8f;
+  color: rgb(0, 0, 0);
+}
+
+/* --circle Design-- */
+.design .circle {
+  aspect-ratio: 1;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+.circle:nth-child(1) {
+  background: linear-gradient(90deg, transparent 50%, rgb(134, 186, 199) 50%);
+  width: 38rem;
+}
+.circle:nth-child(2) {
+  background-image: url(./images/img.png);
+  width: 30rem;
+  border: 0.8rem solid cornsilk;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 1rem cornsilk, inset 0 0 1rem, 0 0 2rem #004d40,
+    inset 0 0 2rem#004d40, 0 0 3rem #004d40, 0 0 4rem #004d40;
+}
